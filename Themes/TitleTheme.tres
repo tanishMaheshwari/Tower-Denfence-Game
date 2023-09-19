@@ -1,0 +1,20 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://caep1qwrw1wcw"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ea2t"]
+content_margin_left = 100.0
+bg_color = Color(0.191406, 0.304688, 0.449219, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_bottom_right = 20
+corner_detail = 10
+
+[resource]
+Label/colors/font_shadow_color = Color(0.0898438, 0.246094, 0.449219, 1)
+Label/constants/line_spacing = 30
+Label/constants/shadow_offset_x = 5
+Label/constants/shadow_offset_y = 5
+Label/font_sizes/font_size = 71
+Label/styles/normal = SubResource("StyleBoxFlat_4ea2t")
