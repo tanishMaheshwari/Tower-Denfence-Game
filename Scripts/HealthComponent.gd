@@ -28,7 +28,7 @@ func setRegen(n = 0, tim = 0):
 	timer.wait_time = tim
 	timer.one_shot = true
 	timer.start()
-	timer.connect("timeout", self, "_on_timer_timeout")
+	#timer.connect("timeout", self, "_on_timer_timeout")
 
 func _on_timer_timeout() -> void:
 	regen = 0;

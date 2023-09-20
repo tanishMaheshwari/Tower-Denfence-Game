@@ -1,0 +1,100 @@
+[gd_scene load_steps=8 format=3 uid="uid://c1w14eviu73ks"]
+
+[ext_resource type="Texture2D" uid="uid://cf0lvf0f5gm3f" path="res://Sprites/Self-Made-Tilesets/Landscape-1-Tile-Map-64x96.png" id="2_s1r5k"]
+[ext_resource type="Texture2D" uid="uid://dljeoy7yhygdi" path="res://Sprites/Self-Made-Tilesets/Spawner-1-64x96.png" id="3_7nxgc"]
+[ext_resource type="Texture2D" uid="uid://dovvo8lo8umij" path="res://Sprites/Self-Made-Tilesets/Towers-1-Tile-Map-64x96_V2.png" id="3_j8oh4"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s4r2u"]
+texture = ExtResource("2_s1r5k")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:0/0/terrain_set = 0
+1:0/0 = 0
+1:0/0/terrain_set = 0
+1:0/0/terrain = 0
+1:0/0/terrains_peering_bit/bottom_right_side = 0
+1:0/0/terrains_peering_bit/top_left_side = 0
+2:0/0 = 0
+2:0/0/terrain_set = 0
+2:0/0/terrain = 0
+2:0/0/terrains_peering_bit/bottom_left_side = 0
+2:0/0/terrains_peering_bit/top_right_side = 0
+3:0/0 = 0
+3:0/0/terrain_set = 0
+3:0/0/terrain = 0
+3:0/0/terrains_peering_bit/bottom_right_side = 0
+3:0/0/terrains_peering_bit/top_right_side = 0
+4:0/0 = 0
+4:0/0/terrain_set = 0
+4:0/0/terrain = 0
+4:0/0/terrains_peering_bit/bottom_right_side = 0
+4:0/0/terrains_peering_bit/bottom_left_side = 0
+5:0/0 = 0
+5:0/0/terrain_set = 0
+5:0/0/terrain = 0
+5:0/0/terrains_peering_bit/bottom_left_side = 0
+5:0/0/terrains_peering_bit/top_left_side = 0
+6:0/0 = 0
+6:0/0/terrain_set = 0
+6:0/0/terrain = 0
+6:0/0/terrains_peering_bit/top_left_side = 0
+6:0/0/terrains_peering_bit/top_right_side = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_irpm1"]
+texture = ExtResource("3_j8oh4")
+texture_region_size = Vector2i(64, 96)
+0:0/0 = 0
+0:1/animation_columns = 5
+0:1/animation_frame_0/duration = 1.0
+0:1/animation_frame_1/duration = 1.0
+0:1/animation_frame_2/duration = 1.0
+0:1/animation_frame_3/duration = 1.0
+0:1/animation_frame_4/duration = 1.0
+0:1/0 = 0
+0:2/animation_columns = 4
+0:2/animation_frame_0/duration = 1.0
+0:2/animation_frame_1/duration = 1.0
+0:2/animation_frame_2/duration = 1.0
+0:2/animation_frame_3/duration = 1.0
+0:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qfca2"]
+texture = ExtResource("3_7nxgc")
+texture_region_size = Vector2i(64, 96)
+0:0/animation_columns = 4
+0:0/animation_frame_0/duration = 1.0
+0:0/animation_frame_1/duration = 1.0
+0:0/animation_frame_2/duration = 1.0
+0:0/animation_frame_3/duration = 1.0
+0:0/0 = 0
+0:1/animation_columns = 4
+0:1/animation_frame_0/duration = 1.0
+0:1/animation_frame_1/duration = 1.0
+0:1/animation_frame_2/duration = 1.0
+0:1/animation_frame_3/duration = 1.0
+0:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jq6b5"]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(64, 32)
+terrain_set_0/mode = 0
+terrain_set_0/terrain_0/name = "Path"
+terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
+sources/4 = SubResource("TileSetAtlasSource_s4r2u")
+sources/5 = SubResource("TileSetAtlasSource_irpm1")
+sources/6 = SubResource("TileSetAtlasSource_qfca2")
+
+[node name="TileMap" type="TileMap"]
+texture_filter = 1
+tile_set = SubResource("TileSet_jq6b5")
+format = 2
+layer_0/name = "Ground"
+layer_0/tile_data = PackedInt32Array(131070, 4, 0, 65534, 4, 0, -2, 4, 0, -1, 4, 0, 65536, 131076, 0, 131071, 4, 0, 65535, 4, 0, 0, 131076, 0, -65536, 131076, 0, -65534, 131076, 0, 2, 131076, 0, 65538, 131076, 0, 131074, 393220, 0, 131073, 65540, 0, 131072, 393220, 0, -131072, 327684, 0, -65537, 65540, 0, -65538, 65540, 0, -65539, 262148, 0, -3, 131076, 0, 65533, 131076, 0, 131069, 393220, 0, 131068, 262148, 0, 196604, 393220, 0, 196603, 262148, 0, 262139, 131076, 0, 458751, 65540, 0, 393216, 327684, 0, 327675, 131076, 0, 393211, 196612, 0, 393212, 327684, 0, 458748, 131076, 0, 524284, 196612, 0, 524285, 65540, 0, 524286, 393220, 0, 458750, 262148, 0, 327681, 4, 0, 262145, 4, 0, 196609, 4, 0, 196608, 4, 0, 262143, 4, 0, 196607, 6, 0, 196606, 4, 0, 196605, 4, 0, 262141, 4, 0, 262140, 4, 0, 327676, 4, 0, 327677, 4, 0, 393213, 4, 0, 458749, 4, 0, 393214, 4, 0, 327678, 4, 0, 262142, 4, 0, 327679, 4, 0, 393215, 4, 0, 327680, 4, 0, 262144, 4, 0, 196610, 4, 0, 262146, 4, 0, 327682, 4, 0, 393218, 4, 0, 393217, 4, 0, 458753, 4, 0, 458752, 4, 0, 524287, 4, 0, 458754, 4, 0, 65537, 4, 0, 1, 4, 0, -65535, 4, 0, -131071, 4, 0, -131070, 6, 1)
+layer_1/name = "Above Ground"
+layer_1/enabled = true
+layer_1/modulate = Color(1, 1, 1, 1)
+layer_1/y_sort_enabled = false
+layer_1/y_sort_origin = 0
+layer_1/z_index = 0
+layer_1/tile_data = PackedInt32Array(131071, 5, 1, 65535, 5, 0, -65535, 5, 2)
