@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://dla1wt55gln0f"]
+[gd_scene load_steps=6 format=3 uid="uid://dla1wt55gln0f"]
 
 [ext_resource type="Script" path="res://Scripts/main_menu.gd" id="1_yaro4"]
 [ext_resource type="Theme" uid="uid://caep1qwrw1wcw" path="res://Themes/TitleTheme.tres" id="2_3afc5"]
 [ext_resource type="Theme" uid="uid://swrk80dqqcqd" path="res://Themes/theme1.tres" id="3_g2it5"]
-[ext_resource type="Texture2D" uid="uid://dpcpsr55j4jrp" path="res://Sprites/Sprite-0001.png" id="4_hupt6"]
+[ext_resource type="Texture2D" uid="uid://b8xb1xe6ax06e" path="res://Sprites/1708581180.png" id="4_leb2r"]
+[ext_resource type="Script" path="res://Scenes/Sprite2D.gd" id="5_aqxcb"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -83,9 +84,15 @@ color = Color(0.211765, 0.419608, 0.6, 1)
 
 [node name="Sprite2D" type="Sprite2D" parent="MarginContainer/HBoxContainer/ColorRect"]
 texture_filter = 1
-position = Vector2(274, 333)
-scale = Vector2(6.83594, 6.83594)
-texture = ExtResource("4_hupt6")
+position = Vector2(341, 355)
+scale = Vector2(4, 4)
+texture = ExtResource("4_leb2r")
+hframes = 50
+script = ExtResource("5_aqxcb")
+
+[node name="Timer" type="Timer" parent="MarginContainer/HBoxContainer/ColorRect/Sprite2D"]
+wait_time = 0.1
+one_shot = true
 
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/VBoxContainer/Options" to="." method="_on_options_pressed"]

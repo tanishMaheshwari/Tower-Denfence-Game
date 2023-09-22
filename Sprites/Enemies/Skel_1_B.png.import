@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3uujam26f114"
-path="res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"
+uid="uid://pl1q67c26mu3"
+path="res://.godot/imported/Skel_1_B.png-986e9b5b6eb4a0ae86f9d1288332bc45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite-0001.png"
-dest_files=["res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"]
+source_file="res://Sprites/Enemies/Skel_1_B.png"
+dest_files=["res://.godot/imported/Skel_1_B.png-986e9b5b6eb4a0ae86f9d1288332bc45.ctex"]
 
 [params]
 

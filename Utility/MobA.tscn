@@ -1,19 +1,22 @@
 [gd_scene load_steps=4 format=3 uid="uid://bcp3xj6wrtl4m"]
 
-[ext_resource type="Texture2D" uid="uid://dpcpsr55j4jrp" path="res://Sprites/Sprite-0001.png" id="1_surp8"]
-[ext_resource type="PackedScene" uid="uid://darqcxdcdh3ya" path="res://Utility/health_component.tscn" id="2_sjb85"]
+[ext_resource type="Texture2D" uid="uid://3qceq1u1ckvl" path="res://Sprites/Enemies/Demon_1_F.png" id="1_knmx0"]
+[ext_resource type="Script" path="res://Scripts/MobA.gd" id="1_lr3ha"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_86ihs"]
-radius = 19.0263
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yhkdk"]
+radius = 4.0
+height = 10.0
 
 [node name="MobA" type="CharacterBody2D"]
+scale = Vector2(2.4, 2.4)
+motion_mode = 1
+script = ExtResource("1_lr3ha")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
-texture = ExtResource("1_surp8")
+texture = ExtResource("1_knmx0")
+hframes = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 1)
-shape = SubResource("CircleShape2D_86ihs")
-
-[node name="HealthComponent" parent="." instance=ExtResource("2_sjb85")]
+shape = SubResource("CapsuleShape2D_yhkdk")

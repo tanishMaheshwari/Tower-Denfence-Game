@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3uujam26f114"
-path="res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"
+uid="uid://ppqpkou54564"
+path="res://.godot/imported/Blue-Orb-64x96.png-1b8907df56fb2155dd14009a568fc3e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite-0001.png"
-dest_files=["res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"]
+source_file="res://Sprites/Self-Made-Tilesets/Blue-Orb-64x96.png"
+dest_files=["res://.godot/imported/Blue-Orb-64x96.png-1b8907df56fb2155dd14009a568fc3e5.ctex"]
 
 [params]
 

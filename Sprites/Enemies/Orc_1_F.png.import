@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d3uujam26f114"
-path="res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"
+uid="uid://c7dctl2c7nkib"
+path="res://.godot/imported/Orc_1_F.png-126f67a7d7f4b4bc743307d715425cf1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sprite-0001.png"
-dest_files=["res://.godot/imported/Sprite-0001.png-70bd1a6433673a0f1a07449d081529fb.ctex"]
+source_file="res://Sprites/Enemies/Orc_1_F.png"
+dest_files=["res://.godot/imported/Orc_1_F.png-126f67a7d7f4b4bc743307d715425cf1.ctex"]
 
 [params]
 
